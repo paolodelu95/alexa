@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* Percorso dell'immagine */
+    background-image: url("https://picsum.photos/1920/1080");
+    /* Adatta l'immagine alla finestra */
+    background-size: cover;
+    /* Centra l'immagine */
+    background-position: center;
+    /* Non ripetere l'immagine */
+    background-repeat: no-repeat;
+    /* Fissa lo sfondo mentre scorri */
+    background-attachment: fixed;
+  }
