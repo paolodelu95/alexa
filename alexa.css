@@ -1,14 +1,45 @@
 body {
-    margin: 0;
-    padding: 0;
-    /* Percorso dell'immagine */
-    background-image: url("https://picsum.photos/1920/1080");
-    /* Adatta l'immagine alla finestra */
-    background-size: cover;
-    /* Centra l'immagine */
-    background-position: center;
-    /* Non ripetere l'immagine */
-    background-repeat: no-repeat;
-    /* Fissa lo sfondo mentre scorri */
-    background-attachment: fixed;
-  }
+  margin: 0;
+  padding: 0;
+  /* Percorso dell'immagine */
+  background-image: url("https://picsum.photos/1920/1080");
+  /* Adatta l'immagine alla finestra */
+  background-size: cover;
+  /* Centra l'immagine */
+  background-position: center;
+  /* Non ripetere l'immagine */
+  background-repeat: no-repeat;
+  /* Fissa lo sfondo mentre scorri */
+  background-attachment: fixed;
+}
+
+button {
+  background: rgba(255, 255, 255, 0.08); /* effetto vetro */
+  color: white;
+  padding: 12px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50px; /* forma pillola */
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(0, 150, 255, 0.4);
+
+
+  backdrop-filter: blur(6px); /* effetto glass */
+  -webkit-backdrop-filter: blur(6px);
+
+  transition: 
+    background 0.2s ease,
+    transform 0.15s ease,
+    filter 0.2s ease;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.18);
+  filter: brightness(1.2);
+  box-shadow: 0 0 18px rgba(0, 170, 255, 0.6);
+}
+
+button:active {
+  transform: scale(0.96);
+  filter: brightness(1.35);
+}
